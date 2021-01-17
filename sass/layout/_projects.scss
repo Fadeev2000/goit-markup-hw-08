@@ -1,0 +1,28 @@
+.section-projects {
+  padding-top: 0;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-height: 70px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

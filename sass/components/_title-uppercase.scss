@@ -1,0 +1,19 @@
+%title-uppercase {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.title-uppercase-features {
+  @extend %title-uppercase;
+  margin-bottom: 10px;
+  color: $add-color-text;
+}
+
+.title-uppercase-projects,
+.title-uppercase-footer {
+  @extend %title-uppercase;
+  color: $main-bg-color;
+}
