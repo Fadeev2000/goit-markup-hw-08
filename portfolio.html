@@ -15,53 +15,74 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a class="logo logo--header" href="index.html" lang="en"
-            ><span class="logo__element">Web</span>Studio</a
-          >
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="index.html">Студия</a>
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__link navigation__link--current"
-                href="portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <a class="logo logo--header" href="index.html" lang="en"
+          ><span class="logo__element">Web</span>Studio</a
+        >
+        <div class="header__menu-container" data-menu>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a
+                  class="navigation__link navigation__link--current"
+                  href="portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-        <address class="address address--header">
-          <ul class="address__list--header">
-            <li class="address__item--header">
-              <a
-                class="address__link address__link--header"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="address__svg" width="16" height="12">
-                  <use href="./images/icons/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="address__item--header">
-              <a
-                class="address__link address__link--header"
-                href="tel:+380961111111"
-              >
-                <svg class="address__svg" width="10" height="16">
-                  <use href="./images/icons/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
+          <address class="address address--header">
+            <ul class="address__list--header">
+              <li class="address__item--header">
+                <a
+                  class="address__link address__link--header"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="address__svg" width="16" height="12">
+                    <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="address__item--header">
+                <a
+                  class="address__link address__link--header"
+                  href="tel:+380961111111"
+                >
+                  <svg class="address__svg" width="10" height="16">
+                    <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <button
+          class="header__button-mobile-switch"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            class="header__svg-mobile-switch"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="header__use-menu"
+              href="./images/icons/sprite.svg#icon-menu-mobile"
+            ></use>
+            <use
+              class="header__use-close"
+              href="./images/icons/sprite.svg#icon-close-mobile"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -100,6 +121,7 @@
               <a class="filter__project-link" href="#">
                 <div class="filter__project-thumb-image">
                   <img
+                    class="filter__project-img"
                     src="images/portfolio/project-1.jpg"
                     alt="Проект Технокряк"
                     width="370"
@@ -124,6 +146,7 @@
               <a class="filter__project-link" href="#">
                 <div class="filter__project-thumb-image">
                   <img
+                    class="filter__project-img"
                     src="images/portfolio/project-2.jpg"
                     alt="Проект Постер New Orlean vs Golden Star"
                     width="370"
@@ -150,6 +173,7 @@
               <a class="filter__project-link" href="#">
                 <div class="filter__project-thumb-image">
                   <img
+                    class="filter__project-img"
                     src="images/portfolio/project-3.jpg"
                     alt="Проект Ресторан Seafood"
                     width="370"
@@ -174,6 +198,7 @@
               <a class="filter__project-link" href="#">
                 <div class="filter__project-thumb-image">
                   <img
+                    class="filter__project-img"
                     src="images/portfolio/project-4.jpg"
                     alt="Проект Prime"
                     width="370"
@@ -198,6 +223,7 @@
               <a class="filter__project-link" href="#">
                 <div class="filter__project-thumb-image">
                   <img
+                    class="filter__project-img"
                     src="images/portfolio/project-5.jpg"
                     alt="Проект Boxes"
                     width="370"
@@ -222,6 +248,7 @@
               <a class="filter__project-link" href="#">
                 <div class="filter__project-thumb-image">
                   <img
+                    class="filter__project-img"
                     src="images/portfolio/project-6.jpg"
                     alt="Проект Inspiration has no Borders"
                     width="370"
@@ -248,6 +275,7 @@
               <a class="filter__project-link" href="#">
                 <div class="filter__project-thumb-image">
                   <img
+                    class="filter__project-img"
                     src="images/portfolio/project-7.jpg"
                     alt="Проект Издание Limited Edition"
                     width="370"
@@ -272,6 +300,7 @@
               <a class="filter__project-link" href="#">
                 <div class="filter__project-thumb-image">
                   <img
+                    class="filter__project-img"
                     src="images/portfolio/project-8.jpg"
                     alt="Проект LAB"
                     width="370"
@@ -296,6 +325,7 @@
               <a class="filter__project-link" href="#">
                 <div class="filter__project-thumb-image">
                   <img
+                    class="filter__project-img"
                     src="images/portfolio/project-9.jpg"
                     alt="Проект Growing Business"
                     width="370"
@@ -400,7 +430,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__blok-form">
+        <div class="footer__block-form">
           <h2 class="title-uppercase-footer">подпишитесь на рассылку</h2>
           <form action="#" class="form-footer">
             <input
@@ -419,5 +449,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
