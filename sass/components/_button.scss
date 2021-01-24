@@ -20,8 +20,8 @@
     box-shadow $transition-duration $transition-timing-function;
 
   &--order-button {
-    //display: inline-flex;
-    display: inline-block;
+    display: flex;
+    //display: block;
     justify-content: center;
     align-items: center;
     width: 200px;

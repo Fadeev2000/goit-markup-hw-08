@@ -141,11 +141,11 @@ textarea {
   box-shadow: 0;
   color: #212121;
   background-color: #f5f4fa;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button--order-button {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
@@ -220,14 +220,14 @@ textarea {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list__icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list__link:hover, .social-list__link:focus {
@@ -245,7 +245,7 @@ textarea {
 
 .social-list__link--transparent-bg {
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-uppercase-features, .title-uppercase-projects, .title-uppercase-footer {
@@ -336,6 +336,7 @@ textarea {
   align-items: center;
   justify-content: center;
   margin-left: auto;
+  z-index: 999;
 }
 
 .header__menu-container.is-open {
@@ -377,7 +378,7 @@ textarea {
   width: 40px;
   height: 40px;
   fill: #212121;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__button-mobile-switch:hover .header__svg-mobile-switch {
@@ -432,7 +433,7 @@ textarea {
   padding-top: 8px;
   padding-bottom: 8px;
   color: #212121;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -550,7 +551,7 @@ textarea {
 
 .address__link {
   display: inline-flex;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address__link--header {
@@ -583,12 +584,6 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /*.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -852,7 +847,7 @@ textarea {
   border-radius: 4px;
   height: 90px;
   color: #afb1b8;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-clients__link:hover, .section-clients__link:focus {
@@ -916,7 +911,7 @@ textarea {
 
 .footer__svg-mobile-switch {
   fill: #212121;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__button-mobile-switch:hover .footer__svg-mobile-switch {
@@ -947,7 +942,6 @@ textarea {
 
 .form-footer__field {
   display: block;
-  margin-bottom: 20px;
   padding: 15px 16px;
   width: 450px;
   height: 50px;
@@ -957,12 +951,18 @@ textarea {
   background-color: rgba(255, 255, 255, 0);
   outline: none;
   color: rgba(255, 255, 255, 0.6);
-  transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 479px) {
   .form-footer__field {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .form-footer__field {
+    margin-bottom: 20px;
   }
 }
 
@@ -979,7 +979,7 @@ textarea {
 
 .form-footer__field::placeholder {
   color: rgba(255, 255, 255, 0.6);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-footer__field:hover::placeholder, .form-footer__field:focus::placeholder {
@@ -994,7 +994,7 @@ textarea {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -1021,7 +1021,7 @@ textarea {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, 0) scale(1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 479px) {
@@ -1063,7 +1063,7 @@ textarea {
   width: 11px;
   height: 11px;
   fill: #000;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button-close:hover .modal__svg-close {
@@ -1108,7 +1108,7 @@ textarea {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-modal__svg-field {
@@ -1119,7 +1119,7 @@ textarea {
   width: 18px;
   height: 18px;
   fill: #212121;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-modal__field:hover, .form-modal__field:focus {
@@ -1145,7 +1145,7 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 1200px) {

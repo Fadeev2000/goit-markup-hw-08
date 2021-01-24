@@ -66,11 +66,11 @@
   overflow: hidden;
 }
 
-.filter__project-img {
-  display: inline-block;
-  width: 450px;
-  height: 294px;
-  background-color: tomato;
+/*.filter__project-img {
+  //display: inline-block;
+  //width: 450px;
+  //height: 294px;
+  //background-color: tomato;
 
   @media screen and (min-width: $tablet) {
     width: 354px;
@@ -81,7 +81,7 @@
     width: 370px;
     height: 294px;
   }
-}
+}*/
 
 .filter__project-overlay {
   display: flex;
