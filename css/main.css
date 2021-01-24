@@ -104,13 +104,6 @@ textarea {
   padding-top: 24px;
   padding-bottom: 25px;
   color: #000000;
-  /*@media screen and (min-width: $tablet) {
-      margin-right: 88px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      margin-right: 93px;
-    }*/
 }
 
 .logo--footer {
@@ -179,14 +172,6 @@ textarea {
   fill: #ffffff;
 }
 
-/*.svg-burger {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 16px;
-  fill: #000;
-}*/
 .social-list {
   display: flex;
   justify-content: space-between;
@@ -460,9 +445,6 @@ textarea {
   background-image: linear-gradient(to right, #2196f3);
 }
 
-/*%address {
-  font-size: 14px;
-}*/
 .address--header {
   display: flex;
   justify-content: center;
@@ -470,10 +452,6 @@ textarea {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  /*@media screen and (max-width: $tablet - 1px) {
-    font-size: 18px;
-    line-height: 1.17;
-  }*/
 }
 
 @media screen and (max-width: 767px) {

@@ -42,7 +42,6 @@
   border-radius: 4px;
 
   transform: translate(-50%, 0) scale(1);
-  //transform: translate(-50%, -50%) scale(1);
   transition: transform $transition-duration $transition-timing-function;
 
   @media screen and (min-width: $tablet) {
