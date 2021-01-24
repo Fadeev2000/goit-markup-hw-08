@@ -1,0 +1,109 @@
+/*%address {
+  font-size: 14px;
+}*/
+
+.address--header {
+  //@extend %address;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  /*@media screen and (max-width: $tablet - 1px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }*/
+
+  @media screen and (max-width: $tablet - 1px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 84px;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 305px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.address--footer {
+  //@extend %address;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address {
+  &__item--header {
+    @media screen and (max-width: $tablet - 1px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: inline-block;
+    }
+  }
+
+  &__item--header:not(:last-child) {
+    @media screen and (max-width: $tablet - 1px) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (max-width: $desktop - 1px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 50px;
+    }
+  }
+
+  &__item--footer:not(:last-child) {
+    margin-bottom: 8px;
+    //text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__item--footer {
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+
+    transition: color $transition-duration $transition-timing-function;
+  }
+
+  &__link--header {
+    color: $main-color-text;
+  }
+
+  &__link--footer-white {
+    color: $main-bg-color;
+  }
+
+  &__link--footer-grey {
+    color: $exception-color;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color-text;
+  }
+
+  &__svg {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}

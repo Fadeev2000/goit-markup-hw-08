@@ -1,0 +1,55 @@
+.section-features {
+  &__list {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: $tablet) {
+      margin: 15px;
+      flex-basis: calc(100% / 2 - 30px);
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc(100% / 4 - 30px);
+    }
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (max-width: $tablet - 1px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  &__item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $add-bg-color;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  $map: (
+    "1": "antenna",
+    "2": "clock",
+    "3": "diagram",
+    "4": "astronaut",
+  );
+  @each $namber, $name in $map {
+    &__item:nth-child(#{$namber})::before {
+      background-image: url(../images/icons/#{$name}-bg.svg);
+    }
+  }
+}

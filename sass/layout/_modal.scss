@@ -1,0 +1,97 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity $transition-duration $transition-timing-function;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+
+  .modal {
+    transform: translate(100%, -50%) scale(0.1);
+  }
+}
+
+.backdrop .container {
+  height: 100vw;
+}
+
+.modal {
+  position: absolute;
+  top: 93px;
+  //top: 50%;
+  left: 50%;
+  padding: 40px;
+  min-height: 609px;
+  width: 450px;
+  @media screen and (max-width: $mobile - 1px) {
+    width: calc(100% - 30px);
+  }
+
+  background-color: $main-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, 0) scale(1);
+  //transform: translate(-50%, -50%) scale(1);
+  transition: transform $transition-duration $transition-timing-function;
+
+  @media screen and (min-width: $tablet) {
+    top: 208px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 221px;
+    min-height: 581px;
+    width: 528px;
+  }
+
+  &__button-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 30px;
+    width: 30px;
+    background: $main-bg-color;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  &__svg-close {
+    width: 11px;
+    height: 11px;
+    fill: #000;
+
+    transition: fill $transition-duration $transition-timing-function;
+  }
+
+  &__button-close:hover &__svg-close {
+    fill: $accent-color-text;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 12px;
+    color: $add-color-text;
+
+    @media screen and (min-width: $desktop) {
+      line-height: 1.17;
+    }
+  }
+}

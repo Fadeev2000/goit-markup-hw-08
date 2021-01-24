@@ -1,14 +1,12 @@
-/*
-Палитра цвета
-основной цвет текста #757575  --main-color-text
-дополнительный цвет текста #212121  --add-color-text
-акцент текст #2196F3 --accent-color-text и #ffffff
-исключение (мыло и телефон в подвале) rgba(255, 255, 255, 0.6)  --exception-color
+//Палитра цвета
+//основной цвет текста #757575  $main-color-text
+//дополнительный цвет текста #212121  $add-color-text
+//акцент текст #2196F3 $accent-color-text и #ffffff
+//исключение (мыло и телефон в подвале) rgba(255, 255, 255, 0.6)  --exception-color
 
-основной фон #ffffff  --main-bg-color
-дополнительный фон #F5F4FA  --add-bg-color
-акцент фон #2F303A  --accent-bg-color
-*/
+//основной фон #ffffff  $main-bg-color
+//дополнительный фон #F5F4FA  $add-bg-color
+//акцент фон #2F303A  $accent-bg-color
 
 $main-color-text: #757575;
 $add-color-text: #212121;
@@ -18,5 +16,5 @@ $add-bg-color: #f5f4fa;
 $accent-bg-color: #2f303a;
 $exception-color: rgba(255, 255, 255, 0.6);
 
-$transition-duration: 250ms;
+$transition-duration: 2500ms;
 $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
